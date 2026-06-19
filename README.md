@@ -1,10 +1,3 @@
-
-<p align="center">
-  <br/>
-  <img src="https://raw.githubusercontent.com/natively/InvestiBand/main/public/og-image.png" alt="InvestiBand Logo" width="600"/>
-  <br/>
-</p>
-
 <p align="center">
   <strong>AI-Powered Multi-Agent Startup Due Diligence Platform</strong>
   <br/>

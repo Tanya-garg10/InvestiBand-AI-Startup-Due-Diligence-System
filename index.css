@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: "Orbitron", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Dark mode base */
+  --color-surface: oklch(0.045 0.008 270);
+  --color-surface-elevated: oklch(0.065 0.012 270);
+  --color-surface-card: oklch(0.085 0.015 265);
+  --color-surface-hover: oklch(0.105 0.018 265);
+  --color-foreground: oklch(0.92 0.01 260);
+  --color-muted: oklch(0.6 0.02 260);
+  --color-border: oklch(0.18 0.02 265);
+  --color-border-light: oklch(0.13 0.015 265);
+
+  /* Agent colors */
+  --color-research: #3b82f6;
+  --color-research-dim: oklch(0.546 0.245 262 / 0.15);
+  --color-market: #22c55e;
+  --color-market-dim: oklch(0.627 0.194 149 / 0.15);
+  --color-finance: #f59e0b;
+  --color-finance-dim: oklch(0.769 0.188 70 / 0.15);
+  --color-risk: #ef4444;
+  --color-risk-dim: oklch(0.637 0.208 25 / 0.15);
+  --color-decision: #a855f7;
+  --color-decision-dim: oklch(0.597 0.278 304 / 0.15);
+
+  /* Standard tokens */
+  --color-primary: #3b82f6;
+  --color-secondary: #6366f1;
+  --color-accent: #f59e0b;
+  --color-destructive: #ef4444;
+
+  /* Override default bg/text for dark mode */
+  --color-background: oklch(0.035 0.005 270);
+  --color-ring: oklch(0.546 0.245 262 / 0.5);
+
+  /* Shadows for dark mode */
+  --shadow-glow-blue: 0 0 20px oklch(0.546 0.245 262 / 0.15);
+  --shadow-glow-green: 0 0 20px oklch(0.627 0.194 149 / 0.15);
+  --shadow-glow-amber: 0 0 20px oklch(0.769 0.188 70 / 0.15);
+  --shadow-glow-red: 0 0 20px oklch(0.637 0.208 25 / 0.15);
+  --shadow-glow-purple: 0 0 20px oklch(0.597 0.278 304 / 0.15);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.2 0.02 265) transparent;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
